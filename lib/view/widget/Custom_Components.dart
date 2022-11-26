@@ -8,9 +8,9 @@ import 'package:flutter/material.dart';
   class CustomText extends StatelessWidget {
 
 
-  late final String? text;
+  @required final String? text;
 
-  late final double? fontsize;
+  @required final double? fontsize;
 
   late final Color? color;
 
