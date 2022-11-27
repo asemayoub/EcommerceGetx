@@ -3,7 +3,7 @@ import 'package:ecommercegetx/view/widget/Custom_Components.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-class LoginScreen extends StatelessWidget {
+class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 420,
+              height: 550,
               decoration: BoxDecoration(
 
 
@@ -46,13 +46,13 @@ class LoginScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CustomText(
-                        text: 'Welcome,',
+                        text: 'SignUp,',
                         fontsize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
                       CustomText(
-                        text: 'SignUp',
+                        text: 'SignIn',
                         fontsize: 18,
                         fontWeight: FontWeight.w400,
                         color: Primarycolor,
@@ -63,12 +63,16 @@ class LoginScreen extends StatelessWidget {
                     height: 5,
                   ),
                   CustomText(
-                    text: 'Sign in to Continue',
+                    text: 'Sign Up New Account',
                     fontsize: 14,
                     color: Colors.grey,
                   ),
                   SizedBox(
-                    height: 56,
+                    height: 40,
+                  ),
+                  InputForm(text: 'Name',type: TextInputType.text, iconPrefex: Icons.person,hint: 'YourName',),
+                  SizedBox(
+                    height: 40,
                   ),
                   InputForm(
                     type: TextInputType.emailAddress,
@@ -110,33 +114,7 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 40,
-            ),
-            Column(
-              children: [
-                CustomText(
-                  text: '-OR-',
-                  fontsize: 18,
-                  color: Colors.black,
-                  alignment: Alignment.center,
-                ),
-                SizedBox(
-                  height: 40,
-                ),
-                CustomSignButtom(
-                  onpressed: () {},
-                  image: 'Assets/images/Google.png',
-                  text: 'Sign In with Google',
-                ),
-                SizedBox(height: 20,),
-                CustomSignButtom(
-                  onpressed: (){},
-                  image: 'Assets/images/Facebook.png',
-                  text: 'Sign In with Facebook',
-                )
-              ],
-            ),
+
           ],
         ),
       ),

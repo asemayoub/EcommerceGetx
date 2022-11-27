@@ -1,6 +1,8 @@
+import 'package:ecommercegetx/view/auth/SignUpScreen.dart';
 import 'package:ecommercegetx/view/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
 
       debugShowCheckedModeBanner: false,
 
-      home: LoginScreen(),
+      home: SignUp(),
 
       // Set Theme Data
       theme: ThemeData(
