@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
 
       debugShowCheckedModeBanner: false,
 
-      home: SignUp(),
+      home: LoginScreen(),
 
       // Set Theme Data
       theme: ThemeData(
