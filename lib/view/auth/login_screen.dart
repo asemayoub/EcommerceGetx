@@ -122,7 +122,7 @@ class LoginScreen extends StatelessWidget {
                   alignment: Alignment.center,
                 ),
                 SizedBox(
-                  height: 40,
+                  height: 30,
                 ),
                 CustomSignButtom(
                   onpressed: () {},
